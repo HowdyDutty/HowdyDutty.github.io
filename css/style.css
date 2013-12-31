@@ -1,0 +1,151 @@
+/*
+	Ment to be combined with Twitter Bootstrap. 
+	Written by: Roman Larionov.
+*/
+
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	overflow-y: hidden;
+}
+
+/*
+	===========================================================
+	Core Navbar code.
+*/
+
+
+.navbar-roman {
+    background-color: #333333;
+}
+
+.dropdown-menu {
+    background-color: #f2f2f2 !important;
+}
+
+.dropdown-menu li {
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #3399f3 !important;
+    color: #ffffff !important;
+}
+/*
+====================================================================
+	Navbar Dropdown stylings.
+*/
+
+/* Allows for expansion of dropdown on hover */
+.nav .dropdown:hover .dropdown-menu{
+    display: block;    
+}
+
+.nav .dropdown:hover {
+	background-color: #333434;
+}
+
+.dropdown-menu {
+	min-width: 0;
+}
+
+.navbar-right .dropdown-menu {
+    left: 0 !important;
+    right: auto !important;
+}
+
+#info-dropdown {
+	width: 200px;
+}
+
+#self-img {
+	border: 1px solid white;
+	border-radius: 50%;
+	height: 120px;
+	width: 120px;
+	margin: auto;
+	margin-top: 19px;
+	display: block;
+}
+
+.dropdown-menu p {
+	margin: auto;
+	width: 11em;
+}
+
+.navbar-roman a {
+    color: #ffffff;
+}
+
+.navbar-header a:hover {
+    color: #ffffff;
+}
+
+.navbar-collapse a:hover {
+    color: #222222;
+}
+
+/*
+	============================================================
+	Footer code.
+*/
+
+.footer {
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	height: 70px;
+	text-align: center;
+	bottom: 0;	
+	opacity: 1;
+	background-color: rgba(20,20,20,0.2);
+}
+
+.footer div ul {
+	list-style-type: none;
+	padding-top: 20px;
+	padding-left: 0 !important;
+}
+
+.footer div ul li {
+	padding-left: 5px;
+	display: inline;
+}
+
+/*
+	============================================================
+	Code for the middle of the page.
+*/
+
+.wrapper {
+	margin-top: 50px;
+	height: 100%;
+	width: 6500px;
+	background-color: #F7EBD7;
+}
+
+.segment {
+	height: 100%;
+	width: 25%;
+	float: left;
+	padding-bottom: 120px;
+	padding-top: 80px;
+}
+
+/*
+	=======================================================================
+		Contact Me Panel code.
+*/
+
+.panel-heading, .panel-footer, .panel-body > p {
+	text-align: center;
+}
+
+.panel-names-input {
+	padding-left: 20px;
+	padding-right: 20px;
+}

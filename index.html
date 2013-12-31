@@ -1,1 +1,118 @@
-Hello World
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+	<script src="js/jQuery.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="dist/js/bootstrap.min.js"></script>
+	<script>
+		// $(function() {
+		// 	$(".wrapper").wrapInner("<table><tr>");
+		// 	$(".segment").wrap("<td>");
+		// });
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top" role="navigation">  
+		<div class="navbar-roman">
+		    <div class="container">
+		    	<div class="navbar-header">
+		    		<a class="navbar-brand" href="#">Roman Larionov</a>
+			    </div>
+		    	<div class="navbar-collapse collapse navbar-right">
+		    		<ul class="nav navbar-nav">
+		    			<li class="dropdown">
+		    				<a href="#" class="dropdown-toggle">Navigate <b class="caret"></b></a>
+		    				<ul id="navigation-dropdown" class="dropdown-menu" role="menu">
+		    					<li><a href="#home">Home</a></li>
+		    					<li><a href="#portfolio">Portfolio</a></li>
+		    					<li><a href="#games">Resume</a></li>
+		    					<li><a href="#contact">Contact Me</a></li>
+		    				</ul>
+		    			</li>
+		    			<li class="dropdown">
+		    				<a href="#">Info <b class="caret"></b></a>
+		    				<!-- Think about using a bootstrap THUMBNAIL	for this. -->
+		    				<ul id="info-dropdown" class="dropdown-menu" role="menu">
+		    					<li><img id="self-img" src="images/selfy.jpg"></li>
+		    					<li><p>This is a paragraph explaining things about me. Hopfully this will be a good looking website.</p></li>
+		    				</ul>
+		    			</li>
+		    		</ul>
+		    	</div>
+		    </div>
+		</div>
+	</nav> 
+	<div role="main" class="wrapper" >
+		<div id="home" class="segment">
+			<div class="container">
+				<p> This is a practice paragraph. My intention with this paragraph is to
+			see if when I press enter, if the new line will translate to the actual
+			website. I don't know if that's how it actually work, so I'm tesing it
+			right now.</p>
+			</div>
+		</div>
+		<div id="portfolio" class="segment">
+			<div class="container">
+				<p> This is a practice paragraph. My intention with this paragraph is to
+			see if when I press enter, if the new line will translate to the actual
+			website. I don't know if that's how it actually work, so I'm tesing it
+			right now.</p>
+			</div>
+		</div>
+		<div id="games" class="segment">
+			<div class="container">
+				<p> This is a practice paragraph. My intention with this paragraph is to
+			see if when I press enter, if the new line will translate to the actual
+			website. I don't know if that's how it actually work, so I'm tesing it
+			right now.</p>
+			</div>
+		</div>
+		<div id="contact" class="segment">
+			<div class="container"> <!-- just reminding you to add a boostrap EXAMPLE for successful/unsuccessful emails -->
+				<div class="panel panel-primary">
+					<div class="panel-heading">Contact Me!</div>
+					<div class="panel-body">
+						<p>If you have any questions, just throw me an e-mail! I check it frequently and will get back to you within one business day.</p>
+						<form action="contact_form" action="contact.php" method="POST">
+							<div class="row panel-names-input">
+							<div class="col-xs-6">
+								<label >First Name *</label><br>
+								<input class="" type="text" placeholder="Your first name here.">		
+							</div>	
+
+							<div class="col-xs-6">
+								<label >Last Name *</label><br>
+								<input class="" type="text" placeholder="Your last name here.">	
+							</div>							
+							</div>
+
+							
+							<!-- <label>email *</label>
+							<br>
+							<input class="span8" type="text" placeholder="Your first name here."> -->
+						</form>
+					</div>
+					<div class="panel-footer">
+						<button type="submit">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer"> <!--code for footer-->
+		<div class="container">
+			<ul>
+				<!-- Images courtesy of Authentic themes https://www.authenticthemes.com/resources/flat-social-media-icons/ & onegameamonth.com -->
+				<li><a href="https://twitter.com/HowdyDutty"><img src="images/social/twitter.png"></a></li>
+				<li><a href="https://plus.google.com/+RomanLarionov1993"><img src="images/social/googleplus.png"></a></li>
+				<li><a href="http://www.linkedin.com/profile/view?id=286685398&trk=nav_responsive_tab_profile"><img src="images/social/linkedin.png"></a></li>
+				<li><a href="https://github.com/HowdyDutty"><img src="images/social/github.png"></a></li>
+				<li><a href="http://www.onegameamonth.com/HowdyDutty"><img src="images/social/ogam.png"></a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
