@@ -141,11 +141,14 @@ body {
 		Contact Me Panel code.
 */
 
-.panel-heading, .panel-footer, .panel-body > p {
+.panel-heading, .panel-footer {
 	text-align: center;
 }
 
-.panel-names-input {
-	padding-left: 20px;
-	padding-right: 20px;
+fieldset div .row {
+	padding-bottom: 20px;
+}
+
+#contact-names {
+	padding-bottom: 10px;
 }
