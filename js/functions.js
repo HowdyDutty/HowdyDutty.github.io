@@ -55,16 +55,20 @@ $(document).ready(function() {
 	var $segment = $(".segment");
 	var numTabs = $(".segment").length;
 
-
 	function checkWidth() {
 		//gets the current screen width;
-		var windowSize = $window.width();
-		var totalWidth = windowSize * numTabs;
+		var windowWidth = $window.width();
+		var totalWidth = windowWidth * numTabs;
+
+		var windowHeight = $window.height();
+
+		$wrapper.height(windowHeight);
 
 		// Algorithom for setting total wrapper width depending on window size.
 		$wrapper.width(totalWidth);
 		// Algorithom for setting each segments width depending on total window size.
 		$segment.each(function() {
+			$(this).height(windowHeight - 175);
 			$(this).innerWidth(totalWidth/numTabs);
 		});
 	}
@@ -73,6 +77,7 @@ $(document).ready(function() {
 	checkWidth();
 	// Event listener for changing screen size.
 	$(window).resize(checkWidth);
+
 
 	/*
 	===========================================================================
@@ -92,6 +97,12 @@ $(document).ready(function() {
 		event.preventDefault();
 	});
 	
+	// $(window).resize(function() {
+	// 	webPage.mousewheel(function(event,delta) {
+	// 		this.scrollLeft === 0;
+	// 		event.preventDefault();
+	// 	});
+	// });
 
 });
 
