@@ -152,3 +152,8 @@ fieldset div .row {
 #contact-names {
 	padding-bottom: 10px;
 }
+
+.panel {
+	min-height: 300px;
+	margin-bottom: auto !important;
+}
