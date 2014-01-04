@@ -13,7 +13,7 @@
 		<div class="navbar-roman">
 		    <div class="container">
 		    	<div class="navbar-header">
-		    		<a class="navbar-brand" href="#">Roman Larionov</a>
+		    		<a class="navbar-brand" href="#home">Roman Larionov</a>
 			    </div>
 		    	<div class="navbar-collapse collapse navbar-right">
 		    		<ul class="nav navbar-nav">
@@ -26,14 +26,7 @@
 		    					<li><a href="#contact">Contact Me</a></li>
 		    				</ul>
 		    			</li>
-		    			<li class="dropdown">
-		    				<a href="#" class="dropdownB">Info <b class="caret"></b></a>
-		    				<!-- Think about using a bootstrap THUMBNAIL	for this. -->
-		    				<ul id="info-dropdown" class="dropdown-menu B" role="menu">
-		    					<li><img id="self-img" src="images/selfy.jpg"></li>
-		    					<li><p>This is a paragraph explaining things about me. Hopfully this will be a good looking website.</p></li>
-		    				</ul>
-		    			</li>
+		    			
 		    		</ul>
 		    	</div>
 		    </div>
@@ -42,10 +35,12 @@
 		<div role="main" class="wrapper">
 			<div id="home" class="segment">
 				<div class="container">
-					<p> This is a practice paragraph. My intention with this paragraph is to
-				see if when I press enter, if the new line will translate to the actual
-				website. I don't know if that's how it actually work, so I'm tesing it
-				right now.</p>
+					<div class="home-img-div">
+						<img class="self-img" src="images/selfy.jpg">
+					</div>
+					<div class="title">
+						<h2>This is me!</h2>
+					</div>
 				</div>
 			</div>
 			<div id="portfolio" class="segment">
@@ -72,7 +67,7 @@
 					<div class="panel panel-primary">
 						<div class="panel-heading">Contact Me!</div>
 						<div class="panel-body">
-							<form  action="contact_form" action="contact.php" method="POST">
+							<form>
 								<fieldset>
 									<div class="row">
 										<div id="contact-names" class="col-xs-6">
@@ -81,7 +76,7 @@
 										</div>
 										
 										<div class="col-xs-6">
-											<label >Last Name</label><br>
+											<label >Last Name</label>
 											<input class="form-control" type="text" placeholder="Your last name here.">	
 										</div>
 									</div>

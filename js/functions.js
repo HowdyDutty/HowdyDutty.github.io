@@ -1,5 +1,4 @@
-$(document).ready(function() {
-
+$(function() {
 
 	/*
 	===========================================================================
@@ -13,22 +12,18 @@ $(document).ready(function() {
 			{'background-color': '#333', 'color': '#ffffff'});}
 	);
 
-	$('.dropdownB, .B').hover(
-		function() {$('.dropdownB').css(
-			{'background-color': '#f2f2f2', 'color': '#000000'});},
-		function() {$('.dropdownB').css(
-			{'background-color': '#333', 'color': '#ffffff'});}
-	);
-
 
 	/*
 	===========================================================================
 		Section slide animation handler.
 	*/
 
+
+
+
 	var webPage = $('html, body');
 
-	$("#navigation-dropdown a").bind("click",function(event){ 
+	$("#navigation-dropdown a, .navbar-brand").bind("click",function(event){ 
 	 	// disables any animation from playing while active.
 	 	event.preventDefault(); 
 
@@ -54,29 +49,33 @@ $(document).ready(function() {
 	var $wrapper = $(".wrapper");
 	var $segment = $(".segment");
 	var numTabs = $(".segment").length;
+	var $panel = $('#contact .panel');
 
-	function checkWidth() {
+	function checkSize() {
 		//gets the current screen width;
 		var windowWidth = $window.width();
-		var totalWidth = windowWidth * numTabs;
-
 		var windowHeight = $window.height();
+		var totalWidth = windowWidth * numTabs;
+		var panelHeight = $panel.height();
 
-		$wrapper.height(windowHeight);
+		// document.write(panelHeight);
+		// $('.panel-body').height(panelHeight);
 
 		// Algorithom for setting total wrapper width depending on window size.
 		$wrapper.width(totalWidth);
+		$wrapper.height(windowHeight);
+
 		// Algorithom for setting each segments width depending on total window size.
 		$segment.each(function() {
-			$(this).height(windowHeight - 175);
+			$(this).height(windowHeight - 150);
 			$(this).innerWidth(totalWidth/numTabs);
 		});
 	}
 
 	// Executes on launch.
-	checkWidth();
+	checkSize();
 	// Event listener for changing screen size.
-	$(window).resize(checkWidth);
+	$(window).resize(checkSize);
 
 
 	/*
@@ -84,7 +83,12 @@ $(document).ready(function() {
 		Code for keeping the scroll bar at current position.
 	*/
 
-
+	// $(window).resize(function() {
+	// 	webPage.mousewheel(function(event,delta) {
+	// 		this.scrollLeft === 0;
+	// 		event.preventDefault();
+	// 	});
+	// });
 
 
 	/*
@@ -96,13 +100,5 @@ $(document).ready(function() {
 		this.scrollLeft -= (delta * 40);
 		event.preventDefault();
 	});
-	
-	// $(window).resize(function() {
-	// 	webPage.mousewheel(function(event,delta) {
-	// 		this.scrollLeft === 0;
-	// 		event.preventDefault();
-	// 	});
-	// });
-
 });
 
