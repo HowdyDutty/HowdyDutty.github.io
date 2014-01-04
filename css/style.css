@@ -3,7 +3,6 @@
 	Written by: Roman Larionov.
 */
 
-
 html, body {
 	height: 100%;
 	width: 100%;
@@ -17,7 +16,6 @@ body {
 	===========================================================
 	Core Navbar code.
 */
-
 
 .navbar-roman {
     background-color: #333333;
@@ -35,6 +33,11 @@ body {
     background-color: #3399f3 !important;
     color: #ffffff !important;
 }
+
+.navbar-brand:hover {
+	color: #ffffff;
+}
+
 /*
 ====================================================================
 	Navbar Dropdown stylings.
@@ -53,40 +56,8 @@ body {
 	min-width: 0;
 }
 
-.navbar-right .dropdown-menu {
-    left: 0 !important;
-    right: auto !important;
-}
-
-#info-dropdown {
-	width: 200px;
-}
-
-#self-img {
-	border: 1px solid white;
-	border-radius: 50%;
-	height: 120px;
-	width: 120px;
-	margin: auto;
-	margin-top: 19px;
-	display: block;
-}
-
-.dropdown-menu p {
-	margin: auto;
-	width: 11em;
-}
-
 .navbar-roman a {
     color: #ffffff;
-}
-
-.navbar-header a:hover {
-    color: #ffffff;
-}
-
-.navbar-collapse a:hover {
-    color: #222222;
 }
 
 /*
@@ -124,31 +95,59 @@ body {
 .wrapper {
 	margin-top: 50px;
 	height: 100%;
-	width: 6500px;
+	width: 6500px; /* Hard coded width if js is disabled. */
 	background-color: #F7EBD7;
 }
 
 .segment {
 	height: 100%;
-	width: 25%;
+	width: 25%; /* Hard coded width if js is disabled. */
 	float: left;
-	padding-bottom: 120px;
-	padding-top: 80px;
+	margin-top: 30px;
+	padding-bottom: 30px;
+}
+
+.segment .container {
+	height: 100%;
 }
 
 /*
 	=======================================================================
-		Contact Me Panel code.
+	Code for Home segment.
+*/
+
+#home .title {
+	text-align: center;
+}
+
+.self-img {
+	display: block;
+	border: 1px solid white;
+	border-radius: 50%;
+	height: 300px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+
+/*
+	=======================================================================
+	Contact Me segment code.
 */
 
 .panel-heading, .panel-footer {
 	text-align: center;
 }
 
-fieldset div .row {
-	padding-bottom: 20px;
+.contact-names {
+	padding-bottom: 15px;
 }
 
-#contact-names {
-	padding-bottom: 10px;
+.panel textarea {
+	resize: none;
+	overflow: hidden;
+	max-width: 800px;
+	min-height: 50px;
+	max-height: 500px;
 }
