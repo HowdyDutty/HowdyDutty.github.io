@@ -50,5 +50,28 @@ $(document).ready(function() {
 	checkWidth();
 	// Event listener for changing screen size.
 	$(window).resize(checkWidth);
+<<<<<<< HEAD
+=======
+
+	/*
+	===========================================================================
+		Code for keeping the scroll bar at current position.
+	*/
+
+
+
+
+	/*
+	===========================================================================
+		Code for switching the vertical scroll of the mouse to go horizontally.
+	*/
+
+	webPage.mousewheel(function(event, delta) {
+		this.scrollLeft -= (delta * 40);
+		event.preventDefault();
+	});
+	
+
+>>>>>>> parent of 5af3597... added support for smaller window sizes.
 });
 
