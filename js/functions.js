@@ -5,10 +5,10 @@ $(function() {
 		Code for dropdown color correction.
 	*/
 
-	$('.dropdownA, .A').hover(
-		function() {$('.dropdownA').css(
+	$('.dropdown, .dropdown-menu').hover(
+		function() {$('.dropdown').css(
 			{'background-color': '#f2f2f2', 'color': '#000000'});},
-		function() {$('.dropdownA').css(
+		function() {$('.dropdown').css(
 			{'background-color': '#333', 'color': '#ffffff'});}
 	);
 
@@ -32,6 +32,48 @@ $(function() {
 	 		scrollLeft: $(target).offset().left, 
 	 		scrollTop: $(target).offset().bottom }, 
 	 		1200); 
+	});
+
+	/*
+	===========================================================================
+		Code for home panel.
+	*/
+
+	// Gets the anchor tags that are clicked on.
+	$('.home-section .list-group a').click(function(event) {
+
+		event.preventDefault();
+
+		$(this).addClass('active');
+		
+		if ($(this).hasClass('academics')) {
+			$('#home .panel-body .academics').show();
+			$('#home .panel-body .academics').nextAll().hide();
+			$(this).nextAll().removeClass('active');
+		}
+
+		else if ($(this).hasClass('activities')) {
+			$('#home .panel-body .activities').show();
+			$('#home .panel-body .activities').prev().hide();
+			$('#home .panel-body .activities').nextAll().hide();
+			$(this).prev().removeClass('active');
+			$(this).nextAll().removeClass('active');
+		}
+
+		else if ($(this).hasClass('interests')) {
+			$('#home .panel-body .interests').show();
+			$('#home .panel-body .interests').prevAll().hide();
+			$('#home .panel-body .interests').next().hide();
+			$(this).prevAll().removeClass('active');
+			$(this).next().removeClass('active');
+		}
+
+		else {
+			$('#home .panel-body .about-me').show();
+			$('#home .panel-body .about-me').prevAll().hide();
+			$(this).prevAll().removeClass('active');
+		}
+		
 	});
 
 	/*
