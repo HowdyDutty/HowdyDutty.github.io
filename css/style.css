@@ -30,7 +30,7 @@ body {
 }
 
 .dropdown-menu a:hover {
-    background-color: #3399f3 !important;
+    background-color: #428bca !important;
     color: #ffffff !important;
 }
 
@@ -121,15 +121,38 @@ body {
 	padding-bottom: 10px;
 }
 
+.home-img-div {
+	height: 210px;
+	width: 215px;
+	float: right;
+	padding: 0 0 10px 15px;
+}
+
 .self-img {
+	float: right;
 	display: block;
-	border: 1px solid white;
+	border: 1px solid #000000;
 	border-radius: 50%;
-	height: 300px;
-	width: 300px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 30px;
+	height: 200px;
+	width: 200px;
+}
+
+.home-section {
+	height: 80%;
+	margin-bottom: 50px;
+}
+
+.home-bottom {
+	float: right;
+}
+
+.home-bottom a {
+	color: #eeeeee;
+}
+
+.home-bottom a:hover {
+	color: #eeeeee;
+	text-decoration: none;
 }
 
 /*

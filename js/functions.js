@@ -21,7 +21,7 @@ $(function() {
 	var webPage = $('html, body');
 
 	// Works for both the brand & dropdown links.
-	$("#navigation-dropdown a, .navbar-brand").bind("click",function(event) { 
+	$("#navigation-dropdown a, .navbar-brand, .home-bottom a").bind("click",function(event) { 
 
 	 	event.preventDefault(); 
 
@@ -39,8 +39,11 @@ $(function() {
 		Code for home panel.
 	*/
 
+	// Only want to show to first info thing.
+	$('#home .panel-body .academics').nextAll().hide();
+
 	// Gets the anchor tags that are clicked on.
-	$('.home-section .list-group a').click(function(event) {
+	$('.home-section .btn-group-vertical button').click(function(event) {
 
 		event.preventDefault();
 
@@ -52,19 +55,11 @@ $(function() {
 			$(this).nextAll().removeClass('active');
 		}
 
-		else if ($(this).hasClass('activities')) {
-			$('#home .panel-body .activities').show();
-			$('#home .panel-body .activities').prev().hide();
-			$('#home .panel-body .activities').nextAll().hide();
-			$(this).prev().removeClass('active');
-			$(this).nextAll().removeClass('active');
-		}
-
 		else if ($(this).hasClass('interests')) {
 			$('#home .panel-body .interests').show();
 			$('#home .panel-body .interests').prevAll().hide();
 			$('#home .panel-body .interests').next().hide();
-			$(this).prevAll().removeClass('active');
+			$(this).prev().removeClass('active');
 			$(this).next().removeClass('active');
 		}
 
@@ -99,11 +94,13 @@ $(function() {
 		// If window is too small, hide the info well.
 		if (windowHeight < 600) {
 			$('#contact .container > .well-sm').hide();
+			$('.title').hide();
 		}
 
 		// For resize, to show well again.
 		else if (windowHeight >= 600) {
 			$('#contact .container > .well-sm').show();
+			$('.title').show();
 		}
 
 		// Algorithom for setting total wrapper size depending on window size.
