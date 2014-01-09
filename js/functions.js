@@ -21,7 +21,7 @@ $(function() {
 	var webPage = $('html, body');
 
 	// Works for both the brand & dropdown links.
-	$("#navigation-dropdown a, .navbar-brand, .home-bottom a").bind("click",function(event) { 
+	$("#navigation-dropdown a, .navbar-brand, .home-bottom a, .home-body .like-what-you-see a").bind("click",function(event) { 
 
 	 	event.preventDefault(); 
 
@@ -36,43 +36,6 @@ $(function() {
 
 	/*
 	===========================================================================
-		Code for home panel.
-	*/
-
-	// Only want to show to first info thing.
-	$('#home .panel-body .academics').nextAll().hide();
-
-	// Gets the anchor tags that are clicked on.
-	$('.home-section .btn-group-vertical button').click(function(event) {
-
-		event.preventDefault();
-
-		$(this).addClass('active');
-		
-		if ($(this).hasClass('academics')) {
-			$('#home .panel-body .academics').show();
-			$('#home .panel-body .academics').nextAll().hide();
-			$(this).nextAll().removeClass('active');
-		}
-
-		else if ($(this).hasClass('interests')) {
-			$('#home .panel-body .interests').show();
-			$('#home .panel-body .interests').prevAll().hide();
-			$('#home .panel-body .interests').next().hide();
-			$(this).prev().removeClass('active');
-			$(this).next().removeClass('active');
-		}
-
-		else {
-			$('#home .panel-body .about-me').show();
-			$('#home .panel-body .about-me').prevAll().hide();
-			$(this).prevAll().removeClass('active');
-		}
-		
-	});
-
-	/*
-	===========================================================================
 		Screen resize handler.
 	*/
 
@@ -80,6 +43,7 @@ $(function() {
 	var $wrapper = $(".wrapper");
 	var $segment = $(".segment");
 	var numTabs = $(".segment").length;
+	var $selfy = $('.self-img');
 
 	function checkSize() {
 
@@ -91,16 +55,30 @@ $(function() {
 		// If the window is too small, change the size of the message box.
 		$('.panel-body textarea').attr('rows', windowHeight/((1000/windowHeight)* 100));
 
+		var newFontSize = windowHeight/((400/windowHeight) * 80);
+
+		if (newFontSize < 16) {
+			$('.home-body').css('font-size', newFontSize);
+		}
+
 		// If window is too small, hide the info well.
 		if (windowHeight < 600) {
 			$('#contact .container > .well-sm').hide();
-			$('.title').hide();
+			$selfy.css({
+				height: '100px',
+				width: '100px'
+			});
+			$('.title').css('margin-bottom', '0');
 		}
 
 		// For resize, to show well again.
 		else if (windowHeight >= 600) {
 			$('#contact .container > .well-sm').show();
-			$('.title').show();
+			$selfy.css({
+				height: '150',
+				width: '150'
+			});
+			$('.title').css('margin-bottom', '40');
 		}
 
 		// Algorithom for setting total wrapper size depending on window size.
@@ -115,21 +93,9 @@ $(function() {
 
 	// Executes on launch.
 	checkSize();
+
 	// Event listener for changing screen size.
 	$(window).resize(checkSize);
-
-	/*
-	===========================================================================
-		Code for keeping the scroll bar at current position.
-	*/
-
-	// $(window).resize(function() {
-	// 	webPage.mousewheel(function(event,delta) {
-	// 		this.scrollLeft === 0;
-	// 		event.preventDefault();
-	// 	});
-	// });
-
 
 	/*
 	===========================================================================
