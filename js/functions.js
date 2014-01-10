@@ -55,7 +55,7 @@ $(function() {
 		// If the window is too small, change the size of the message box.
 		$('.panel-body textarea').attr('rows', windowHeight/((1000/windowHeight)* 100));
 
-		var newFontSize = windowHeight/((400/windowHeight) * 80);
+		var newFontSize = windowHeight/((380/windowHeight) * 80);
 
 		if (newFontSize < 16) {
 			$('.home-body').css('font-size', newFontSize);
@@ -69,6 +69,7 @@ $(function() {
 				width: '100px'
 			});
 			$('.title').css('margin-bottom', '0');
+			$('.title h3').css('fontSize', '16px');
 		}
 
 		// For resize, to show well again.
@@ -79,6 +80,7 @@ $(function() {
 				width: '150'
 			});
 			$('.title').css('margin-bottom', '40');
+			$('.title h3').css('fontSize', '26px');
 		}
 
 		// Algorithom for setting total wrapper size depending on window size.
