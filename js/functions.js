@@ -21,7 +21,7 @@ $(function() {
 	var webPage = $('html, body');
 
 	// Works for both the brand & dropdown links.
-	$("#navigation-dropdown a, .navbar-brand, .home-bottom a, .home-body .like-what-you-see a").bind("click",function(event) { 
+	$("#navigation-dropdown a, .navbar-brand, .home-bottom a, .like-what-you-see a").bind("click",function(event) { 
 
 	 	event.preventDefault(); 
 
@@ -63,7 +63,6 @@ $(function() {
 
 		// If window is too small, hide the info well.
 		if (windowHeight < 600) {
-			$('#contact .container > .well-sm').hide();
 			$selfy.css({
 				height: '100px',
 				width: '100px'
@@ -74,7 +73,6 @@ $(function() {
 
 		// For resize, to show well again.
 		else if (windowHeight >= 600) {
-			$('#contact .container > .well-sm').show();
 			$selfy.css({
 				height: '150',
 				width: '150'
