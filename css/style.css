@@ -174,10 +174,34 @@ body {
 
 /*
 	=======================================================================
+	Portfolio segment code.
+*/
+
+#portfolio .well {
+	height: 90%;
+	width: 100%;
+}
+
+#portfolio .projects {
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+
+#portfolio .projects p {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/*
+	=======================================================================
 	Resume segment code.
 */
 
 #resume iframe {
+	display: block;
+	margin: 0 auto 0 auto;
 	height: 90%;
 	width: 100%;
 	min-width: 540px;
