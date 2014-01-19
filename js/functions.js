@@ -83,7 +83,7 @@ $(function() {
 
 		// Algorithom for setting total wrapper size depending on window size.
 		$wrapper.width(totalWidth);
-		$wrapper.height(windowHeight - 120);
+		$wrapper.height(windowHeight - 115);
 
 		// Algorithom for setting each segments' width depending on total window size.
 		$segment.each(function() {
