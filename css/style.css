@@ -67,7 +67,7 @@ body {
 */
 
 .footer {
-	min-width:100%;
+	min-width:25%;
 	position: fixed;
 	z-index: 2;
 	width: 100%;
@@ -146,10 +146,8 @@ body {
 }
 
 .home-body {
-	/*padding-top: 30px;*/
 	height: 60%;
 	width: 100%;
-	
 }
 
 .about, .doing, .afraid {
