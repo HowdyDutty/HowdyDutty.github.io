@@ -39,6 +39,10 @@ $(function() {
 		Screen resize handler.
 	*/
 
+	
+
+	
+
 	var $window = $(window);
 	var $wrapper = $(".wrapper");
 	var $segment = $(".segment");
@@ -50,6 +54,21 @@ $(function() {
 		// Getting various sizes.
 		var windowWidth = $window.width();
 		var windowHeight = $window.height();
+
+
+		/*
+		===========================================================================
+			Code for switching window width on mobile orientation change.
+		*/
+
+		$window.bind( 'orientationchange', 
+			function(e){
+    			var ori = window.orientation;
+        		windowWidth = (ori==90 || ori==-90) ? screen.height : screen.width;
+    		};
+		});
+
+
 		var totalWidth = windowWidth * numTabs;
 
 		// If the window is too small, change the size of the message box.
@@ -108,8 +127,4 @@ $(function() {
 		event.preventDefault();
 	});
 });
-
-// document.ontouchstart = function(e){ 
-//     e.preventDefault(); 
-// }
 
