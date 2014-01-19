@@ -109,7 +109,7 @@ $(function() {
 	});
 });
 
-document.ontouchstart = function(e){ 
-    e.preventDefault(); 
-}
+// document.ontouchstart = function(e){ 
+//     e.preventDefault(); 
+// }
 
