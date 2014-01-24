@@ -21,27 +21,24 @@ $(function() {
 	var webPage = $('html, body');
 
 	// Works for both the brand & dropdown links.
-	$("#navigation-dropdown a, .navbar-brand, .home-bottom a, .like-what-you-see a").bind("click",function(event) { 
+	$("#navigation-dropdown a, .navbar-brand, .home-bottom a").bind("click",
 
-	 	event.preventDefault(); 
+		function(event) { 
+		 	event.preventDefault(); 
 
-	 	var target = $(this).attr("href"); 
+		 	var target = $(this).attr("href"); 
 
-	 	// Animations for navbar buttons.
-	 	webPage.stop().animate({ 
-	 		scrollLeft: $(target).offset().left, 
-	 		scrollTop: $(target).offset().bottom }, 
-	 		1200); 
+		 	// Animations for navbar buttons.
+		 	webPage.stop().animate({ 
+		 		scrollLeft: $(target).offset().left, 
+		 		scrollTop: $(target).offset().bottom }, 
+		 		1200); 
 	});
 
 	/*
 	===========================================================================
 		Screen resize handler.
 	*/
-
-	
-
-	
 
 	var $window = $(window);
 	var $wrapper = $(".wrapper");
