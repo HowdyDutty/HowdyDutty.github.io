@@ -192,6 +192,46 @@ body {
 	text-align: center;
 }
 
+.projects .row {
+	width: 100%;
+	height: 100%;
+}
+
+.projects .row .col-xs-12 {
+	height: 100%;
+}
+
+.tabula-rasa {
+	height: 100%;
+	width: 100%;
+	display: flex;
+}
+
+.tabula-rasa div {
+	margin: auto;
+}
+
+.tabula-rasa div h4, .tabula-rasa div a {
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+
+.tabula-rasa div span {
+	padding-left: 20px;
+}
+
+.tabula-rasa img {
+
+	height: 50%;
+	width: 100%;
+	max-height: 161px;
+	max-width: 228px;
+	-webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 1);
+    -moz-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 1);
+	box-shadow: 2px 2px 5px 0 rgba(0,0,0,1);
+}
+
 /*
 	=======================================================================
 	Resume segment code.
