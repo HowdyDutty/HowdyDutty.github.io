@@ -2,6 +2,13 @@ $(function() {
 
 	/*
 	===========================================================================
+		Code for correcting domain name.
+	*/
+
+	window.location = "http://romanlarionov.com";
+
+	/*
+	===========================================================================
 		Code for dropdown color correction.
 	*/
 
