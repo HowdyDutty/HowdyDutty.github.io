@@ -1,11 +1,13 @@
-$(function() {
 
 	/*
-	===========================================================================
-		Code for correcting domain name.
+		Written by: Roman Larionov
+		jQuery for Roman Larionov's personal portfolio website. 
+		
+		This script uses multiple libraries including Mousewheel 
+		and jQuery.
 	*/
 
-	window.location = "http://romanlarionov.com";
+$(function() {
 
 	/*
 	===========================================================================
