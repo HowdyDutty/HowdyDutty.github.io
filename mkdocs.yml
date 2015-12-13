@@ -1,0 +1,12 @@
+site_name: Roman Larionov's Portfolio
+
+pages:
+- Home: 'index.md'
+- Portfolio:
+    - 'Research': 'portfolio/isue.md'
+    - 'Virtual Vista': 'portfolio/virtualvista.md'
+    - 'Tabula Rasa': 'portfolio/tabularasa.md'
+- Resume: 'resume.md'
+- Contact: 'contact.md'
+
+theme: readthedocs 
