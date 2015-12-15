@@ -1,0 +1,79 @@
+{
+    "docs": [
+        {
+            "location": "/index.html", 
+            "text": "Welcome\n\n\nHello and welcome to my personal portfolio. My name is Roman Larionov and I am currently a senior, studying computer science, at the University of Central Florida. Throughout this site, you will find several projects that I have worked on in my Intro to Composition 2 course at UCF. Each project contains my initially submitted drafts, a revised version, and a detailed explanation for any revision choices. A overview of my thought process behind every major project can be found in the \nPortfolio Reflection\n section as well.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/index.html#welcome", 
+            "text": "Hello and welcome to my personal portfolio. My name is Roman Larionov and I am currently a senior, studying computer science, at the University of Central Florida. Throughout this site, you will find several projects that I have worked on in my Intro to Composition 2 course at UCF. Each project contains my initially submitted drafts, a revised version, and a detailed explanation for any revision choices. A overview of my thought process behind every major project can be found in the  Portfolio Reflection  section as well.", 
+            "title": "Welcome"
+        }, 
+        {
+            "location": "/reflection/index.html", 
+            "text": "", 
+            "title": "Reflection"
+        }, 
+        {
+            "location": "/project1/original/index.html", 
+            "text": "", 
+            "title": "Original"
+        }, 
+        {
+            "location": "/project1/revised/index.html", 
+            "text": "", 
+            "title": "Revised"
+        }, 
+        {
+            "location": "/project1/reflection/index.html", 
+            "text": "", 
+            "title": "Reflection"
+        }, 
+        {
+            "location": "/project2/original/index.html", 
+            "text": "", 
+            "title": "Original"
+        }, 
+        {
+            "location": "/project2/revised/index.html", 
+            "text": "", 
+            "title": "Revised"
+        }, 
+        {
+            "location": "/project2/reflection/index.html", 
+            "text": "", 
+            "title": "Reflection"
+        }, 
+        {
+            "location": "/project3/original/index.html", 
+            "text": "", 
+            "title": "Original"
+        }, 
+        {
+            "location": "/project3/revised/index.html", 
+            "text": "", 
+            "title": "Revised"
+        }, 
+        {
+            "location": "/project3/reflection/index.html", 
+            "text": "", 
+            "title": "Reflection"
+        }, 
+        {
+            "location": "/project4/original/index.html", 
+            "text": "", 
+            "title": "Original"
+        }, 
+        {
+            "location": "/project4/revised/index.html", 
+            "text": "", 
+            "title": "Revised"
+        }, 
+        {
+            "location": "/project4/reflection/index.html", 
+            "text": "", 
+            "title": "Reflection"
+        }
+    ]
+}
